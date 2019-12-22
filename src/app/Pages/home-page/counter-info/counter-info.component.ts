@@ -22,22 +22,22 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class CounterInfoComponent implements OnInit {
 
-  counterState = 'hide';
-  constructor(public el: ElementRef) { }
+  //counterState = 'hide';
+  //constructor(public el: ElementRef) { }
 
   ngOnInit() {
   }
 
-  @HostListener('window:scroll', ['$event'])
-  checkCounterScroll(){
-    const counterPosition = this.el.nativeElement.offsetTop;
-    const scrollPosition = window.pageYOffset;
+ // @HostListener('window:scroll', ['$event'])
+ // checkCounterScroll(){
+  //  const counterPosition = this.el.nativeElement.offsetTop;
+ //   const scrollPosition = window.pageYOffset;
 
-    if (scrollPosition >= counterPosition){
-      this.counterState = 'show';
+  //  if (scrollPosition >= counterPosition){
+ //     this.counterState = 'show';
     //} else {
      // this.counterState = 'hide';
-    }
-  }
+  //  }
+ // }
 
 }
