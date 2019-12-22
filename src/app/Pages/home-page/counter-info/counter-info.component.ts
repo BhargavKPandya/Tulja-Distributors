@@ -4,21 +4,21 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 @Component({
   selector: 'app-counter-info',
   templateUrl: './counter-info.component.html',
-  styleUrls: ['./counter-info.component.scss'],
-  animations:[
-    trigger('conterAnimation',[
-      state('show', style({
-        opacity: 1,
-        transform: "translateX(0)"
-      })),
-      state('hide',style({
-        opacity: 0.40,
-        transform: "translateX(0)"
-      })),
-      transition('show => hide', animate('350ms ease-out')),
-      transition('hide => show', animate('150ms ease-in'))
-    ])
-  ]
+  styleUrls: ['./counter-info.component.scss']
+  //animations:[
+  //  trigger('conterAnimation',[
+  //    state('show', style({
+   //     opacity: 1,
+  //      transform: "translateX(0)"
+  //    })),
+  //    state('hide',style({
+  //      opacity: 0.40,
+  //      transform: "translateX(0)"
+  //    })),
+ //     transition('show => hide', animate('350ms ease-out')),
+ //     transition('hide => show', animate('150ms ease-in'))
+ //   ])
+ // ]
 })
 export class CounterInfoComponent implements OnInit {
 
