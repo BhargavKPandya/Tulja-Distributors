@@ -1,0 +1,22 @@
+<section class="banner_part">
+        <div class="container">
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-md-6 col-lg-5 pt-5 pb-5">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            
+                            <h1>{{bannerHeaderText}}</h1>
+                            <p>{{bannerSubText}}</p>
+                            <a [routerLink]="['/Product']" class="btn_1" *ngIf="showButton">View Products</a>
+                        </div>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-7 col-xl-5 offset-xl-2">
+                    <div class="banner_bg">
+                    <img class="img-fluid d-block" [src]="bannerHeaderImage">
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+

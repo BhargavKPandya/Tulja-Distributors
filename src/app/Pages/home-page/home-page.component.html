@@ -1,0 +1,142 @@
+<app-banner-section [bannerHeaderText]="homePageBannerHeaderText" 
+[bannerSubText]="homePageBannerSubText" [showButton]="true" [bannerHeaderImage]="homePageBannerImage"></app-banner-section>
+
+<section class="feature_part">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-xl-3 align-self-center">
+                <div class="single_feature_text ">
+                    <h2>Why Choose Us</h2>
+                    <p>We are authorised distributors of Waghbakri.</p>
+                    <a [routerLink]="['/About']" class="btn_1">Read More</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part">
+                        <span class="single_feature_icon">
+                            <fa-icon [icon]="faSitemap" size="lg" [fixedWidth]="true" [class]="'test'"></fa-icon>
+                        </span>
+                        <h4>Worry free Business</h4>
+                        <p>We supply products directly from Waghbakri to you that means, you will get always best rate and fresh products from us.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part">
+                        <span class="single_feature_icon">
+                            <fa-icon [icon]="faShippingFast" size="lg" [fixedWidth]="true" [class]="'test'"></fa-icon></span>
+                        <h4>6 Day/Week Service</h4>
+                        <p>Place your order with your require qunatity and we will delivery items to your place at your given time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part single_feature_part_2">
+                        <span class="single_service_icon style_icon">
+                            <fa-icon [icon]="faTruckLoading" size="lg" [fixedWidth]="true" [class]="'test'"></fa-icon></span>
+                        <h4>Serve all type of consumer</h4>
+                        <p>We do business with all type of conumer from small vendor to big supermarket.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="learning_part">
+    <div class="container">
+        <div class="row align-items-sm-center align-items-lg-stretch">
+            <div class="col-md-7 col-lg-7">
+                <!--<div class="learning_img">-->
+                <div class="align-self-center">
+                    <img src="../../../assets/office.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-5">
+                <div class="learning_member_text">
+                    <h5>About us</h5>
+                    <h2>Shop with Confidence</h2>
+                    <p>We are in business more than 30 years. You can place your order from wide range
+                        of Waghbakri products. We serve key area of Vadordara which includes karelibaug, sama, fatehgunj, nizampura.</p>
+                    <ul>
+                        <li><fa-icon [icon]="faUsers" size="lg" [fixedWidth]="true"></fa-icon> Serving all type of consumers.</li>
+                        <li><fa-icon [icon]="faRupeeSign" size="lg" [fixedWidth]="true"></fa-icon>Get products at cheaper rate.</li>
+                    </ul>
+                    <a [routerLink]="['/About']" class="btn_1">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-counter-info></app-counter-info>
+
+
+<section class="special_cource padding_top">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-5">
+                <div class="section_tittle text-center">
+                    <p>popular products</p>
+                    <h2>Special Products</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pb-5">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        
+                        <mat-card-title>Wagh Bakri Fanning Tea</mat-card-title>
+
+                    </mat-card-header>
+                    <img mat-card-image src="../../../assets/Wagh Bakri CTC Tea/wagh-bakri-fanning-tea-img01.png"
+                        alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                        <p>
+                            Wagh Bakri Fanning Tea is a blend cut between Leaf and Dust. It gives strong taste, bright
+                            colour and more cuppage.
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pb-5">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        
+                        <mat-card-title>Wagh Bakri CTC Leaf Tea</mat-card-title>
+
+                    </mat-card-header>
+                    <img mat-card-image src="../../../assets/Wagh Bakri CTC Tea/wagh-bakri-leaf-tea-img01.png"
+                        alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                        <p>
+                            Wagh Bakri CTC Leaf Tea is made of fine quality tea leaves specially handpicked from
+                            selected
+                            quality gardens.
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pb-5">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        
+                        <mat-card-title>Wagh Bakri Dust Tea</mat-card-title>
+
+                    </mat-card-header>
+                    <img mat-card-image src="../../../assets/Wagh Bakri CTC Tea/wagh-bakri-dust-tea-img01.png"
+                        alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                        <p>
+                            Wagh Bakri Dust Tea offers strong taste, deep colour and more cuppage.
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</section>

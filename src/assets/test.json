@@ -1,0 +1,39 @@
+{
+    "products": [
+       {
+          "productId": 1,
+          "productType": "Instant",
+          "productName": "Wagh Bakri CTC Leaf Tea",
+          "productImage": "assets/Wagh Bakri CTC Tea/wagh-bakri-leaf-tea-img01.png",
+          "productDescription": "The tea is made of fine quality tea leaves specially handpicked from selected quality gardens. The brand offers region specific blends for supreme consumer satisfaction."
+       },
+       {
+          "productId": 2,
+          "productType": "Instant",
+          "productName": "Wagh Bakri Dust Tea",
+          "productImage": "assets/Wagh Bakri CTC Tea/wagh-bakri-dust-tea-img01.png",
+          "productDescription": "Wagh Bakri Dust Tea offers strong taste, deep colour and more cuppage."
+       },
+       {
+          "productId": 3,
+          "productType": "Instant",
+          "productName": "Wagh Bakri Fanning Tea",
+          "productImage": "assets/Wagh Bakri CTC Tea/wagh-bakri-fanning-tea-img01.png",
+          "productDescription": "Wagh Bakri Fanning Tea is a blend cut between Leaf and Dust. It gives strong taste, bright colour and more cuppage."
+       },
+       {
+          "productId": 4,
+          "productType": "Instant",
+          "productName": "Wagh Bakri Spiced Tea",
+          "productImage": "assets/Wagh Bakri CTC Tea/wb-spiced-tea-2018.png",
+          "productDescription": "A unique blend of seven authentic Indian spices and rich premium tea leaves. Advanced process of blending ensures the goodness of seven spices absorbed in every granule uniformly and gets released at the time of brewing."
+       },
+       {
+          "productId": 5,
+          "productType": "Instant",
+          "productName": "Pure Darjeeling Tea",
+          "productImage": ".png",
+          "productDescription": "The crisp air, foggy hills and romantic rains of Darjeeling are gifts of nature. Man complemented these by breathtaking tea plantations. The result of this perfect harmony between man and nature is the splendid Darjeeling tea – unparalleled anywhere in the world. Wagh Bakri Tea Group takes pride in bringing you Darjeeling Tea, the choicest selection from this famed region. Handpicked to guarantee satisfaction and certified to guarantee purity."
+       }
+    ]
+ }

@@ -1,0 +1,163 @@
+<app-banner-section [bannerHeaderText]="productBannerHeaderText" 
+[bannerSubText]="productBannerSubText" [bannerHeaderImage]="productPageBannerImage"></app-banner-section>
+
+<!--<div class="container">
+<div class="row">
+<div class="form-group col-sm-12 col-lg-4 col-xl-4">
+<mat-form-field>
+        <mat-label>Select an product:</mat-label>
+    <mat-select [(ngModel)]="brandname" (selectionChange)="testing111(brandname)">
+        <mat-option [value]="brandname" *ngFor="let brandname of brandTesting">{{brandname}}</mat-option>
+    
+    </mat-select>
+</mat-form-field>
+    
+    </div>
+    <div class="form-group col-sm-12 col-lg-4 col-xl-4">
+    <mat-form-field>
+            <mat-label>Select an product:</mat-label>
+        <mat-select>
+                <mat-option value={{product.productName}} *ngFor="let product of subbrandTesting1">{{product.productName}}</mat-option>
+        
+        </mat-select>
+    </mat-form-field>
+        </div>
+    </div>
+</div>-->
+
+<section class="special_cource pt-5">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-5">
+            <div class="section_tittle text-center">
+                <h2>WaghBakri Products</h2>
+            </div>
+        </div>
+    </div>
+    <!--<div *ngIf="loading else loaded">
+            loading ...
+        </div>
+        <ng-template #loaded>-->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let product of waghbakriProductInfo | slice:0:9;">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <mat-card-title>{{ product.productName}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image [src]="product.productImage" [alt]="product.productImageAltText">
+                <mat-card-content>
+                    <p [innerText]="product.productDescription">
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+<!--</ng-template>-->
+
+    <div class="row" *ngIf="waghbakriProductInfo.length > showmoreButton">
+        <div class="col-lg-12 pt-5 pb-5">
+            <p>WaghBakri has more tea products like instant tea packs, green tea and Ice Tea which 
+                we sell them under Waghbakri brand. To view them please click on "Show More Products" button below.</p>
+            <button class="justify-content-center btn_1"  (click)="viewMoreProducts();">Show
+                More Products</button>
+        </div>
+    </div>
+    <div class="row" *ngIf="showMoreProduct">
+
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let product of waghbakriProductInfo | slice:9;">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <mat-card-title>{{ product.productName}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image [src]="product.productImage" [alt]="product.productImageAltText">
+                <mat-card-content>
+                    <p [innerText]="product.productDescription">
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+
+    </div>
+
+</div>
+</section>
+
+<section class="special_cource pt-5">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-5">
+            <div class="section_tittle text-center">
+                <h2>Good Morning Products</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let product of goodMorningProductInfo">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <mat-card-title>{{ product.productName}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image [src]="product.productImage" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p [innerText]="product.productDescription">
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="special_cource pt-5">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-5">
+            <div class="section_tittle text-center">
+                <h2>Mili Products</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let product of miliProductInfo">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <mat-card-title>{{ product.productName}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image [src]="product.productImage" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p [innerText]="product.productDescription">
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="special_cource pt-5 pb-5">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-5">
+            <div class="section_tittle text-center">
+                <h2>Navchetan Products</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let product of navchetanProductInfo">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <mat-card-title>{{ product.productName}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image [src]="product.productImage" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p [innerText]="product.productDescription">
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+</section>
